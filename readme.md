@@ -1,6 +1,6 @@
 #GoL
 
-var life = require('GoL')
+var life = require('gol')
 
 ##life(living)
 
