@@ -1,0 +1,7 @@
+{ "name": "GoL"
+, "version": "0.0.1"
+, "main": "life.js"
+, "scripts": { "test": "for f in ./t/*.js; do node $f; done" }
+, "devDependencies": { "tape": "*" }
+, "engines": { "node": ">0.6" }
+}
