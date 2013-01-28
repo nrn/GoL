@@ -1,7 +1,11 @@
 { "name": "gol"
-, "version": "0.0.2"
+, "version": "0.0.3"
 , "main": "life.js"
 , "scripts": { "test": "for f in ./t/*.js; do node $f; done" }
 , "devDependencies": { "tape": "*" }
 , "engines": { "node": ">0.6" }
+, "repository":
+  { "type": "git"
+  , "url": "git://github.com/nrn/GoL.git"
+  }
 }
