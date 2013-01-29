@@ -6,6 +6,10 @@ function update (alive) {
   return build(alive.reduce(findNeighbors, {}))
 }
 
+update.findNeighbors = findNeighbors
+update.add = add
+update.build = build
+
 function findNeighbors (neighbors, cell) {
   var xs = [ cell.x - 1, cell.x, cell.x + 1 ]
     , ys = [ cell.y - 1, cell.y, cell.y + 1 ]
@@ -13,19 +17,20 @@ function findNeighbors (neighbors, cell) {
   xs.forEach( function (x) {
     ys.forEach( function (y) {
       if (x === cell.x && y === cell.y) {
-        add(x+','+y, 0).live = true
-      } else add(x+','+y, 1)
+        add(x+','+y, 0, neighbors).live = true
+      } else add(x+','+y, 1, neighbors)
     })
   })
 
-  function add (loc, num) {
-    if (neighbors[loc]) neighbors[loc].value += num
-    else neighbors[loc] = { value: num }
-    return neighbors[loc]
-  }
-
   return neighbors
 }
+
+function add (loc, num, neighbors) {
+  if (neighbors[loc]) neighbors[loc].value += num
+  else neighbors[loc] = { value: num }
+  return neighbors[loc]
+}
+
 
 function build (neighbors) {
   return Object.keys(neighbors).map(function (loc) {
