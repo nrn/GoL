@@ -1,5 +1,5 @@
 { "name": "gol"
-, "version": "0.0.3"
+, "version": "0.0.4"
 , "main": "life.js"
 , "scripts": { "test": "for f in ./t/*.js; do node $f; done" }
 , "devDependencies": { "tape": "*" }
