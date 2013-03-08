@@ -1,9 +1,22 @@
 { "name": "gol"
-, "version": "0.0.4"
+, "version": "0.0.5"
 , "main": "life.js"
+, "author": "Nick Niemeir <nick.niemeir@gmail.com> (http://nrn.io)"
+, "description": "Take an array of x, y living cells and return the next generation."
+, "keywords": [ "game", "life" ]
 , "scripts": { "test": "for f in ./t/*.js; do node $f; done" }
 , "devDependencies": { "tape": "*" }
 , "engines": { "node": ">0.6" }
+, "testling":
+  { "files": [ "t/*.js" ]
+  , "browsers":
+    { "chrome": [ "24", "canary" ]
+    , "firefox": [ "18", "nightly" ]
+    , "safari": [ "5.1", "6.0" ]
+    , "ie": [ "10" ]
+    , "opera": [ "12", "next" ]
+    }
+  }
 , "repository":
   { "type": "git"
   , "url": "git://github.com/nrn/GoL.git"
