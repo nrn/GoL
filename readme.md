@@ -2,7 +2,7 @@
 
 var life = require('gol')
 
-[![browser support](http://ci.testling.com/nrn/gol.png)](http://ci.testling.com/nrn/gol)
+[![browser support](https://ci.testling.com/nrn/gol.png)](https://ci.testling.com/nrn/gol)
 
 ##life(living)
 
