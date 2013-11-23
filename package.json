@@ -1,10 +1,10 @@
 { "name": "gol"
-, "version": "0.0.5"
-, "main": "life.js"
+, "version": "0.1.0"
 , "author": "Nick Niemeir <nick.niemeir@gmail.com> (http://nrn.io)"
 , "description": "Take an array of x, y living cells and return the next generation."
+, "license": "MIT"
 , "keywords": [ "game", "life" ]
-, "scripts": { "test": "for f in ./t/*.js; do node $f; done" }
+, "scripts": { "test": "node test.js" }
 , "devDependencies": { "tape": "*" }
 , "engines": { "node": ">0.6" }
 , "testling":

@@ -1,5 +1,5 @@
 var test = require('tape')
-  , life = require('../life.js')
+  , life = require('./index.js')
 
 test('Game of life', function (t) {
   var gen1 =
